@@ -11,8 +11,8 @@ jobs:
   test:
     env:
       MONGODB_CLUSTER_ADDRESS: github-action-learn.g45yvpc.mongodb.net
-      MONGODB_USERNAME: thinyu354
-      MONGODB_PASSWORD: y3iRSsxFqKVsYTRn
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 3000
     # environment: testing
     runs-on: ubuntu-latest
